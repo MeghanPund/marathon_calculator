@@ -50,6 +50,7 @@ def pace(race_hours, race_minutes, race_seconds, distance_in_miles):
 
 
 def run_program():
+    '''Runs the program.'''
     print("Welcome to the Marathon Calculator.\
           Would you like to calculate your pace based on finish time,\
           or your finish time based on pace?\n")
