@@ -60,5 +60,5 @@ def run_program():
         print("Oops. Try that again.")
         run_program()
 
-
-run_program()
+if __name__=='__main__':
+    run_program()
