@@ -1,6 +1,5 @@
 from math import *
 
-
 def completion_time(pace_mins, pace_secs, distance_in_miles):
     '''
     Takes 3 arguments, pace in minutes, pace in seconds, and distance in miles.
@@ -12,17 +11,13 @@ def completion_time(pace_mins, pace_secs, distance_in_miles):
     hours = floor((total_secs / 60) / 60)
 
     if distance_in_miles == 13.1:
-        print(f"Your projected half marathon time is\
-             {hours} hours, {minutes} minutes, and {seconds} seconds!")
+        print(f"Your projected half marathon time is {hours} hours, {minutes} minutes, and {seconds} seconds!")
     elif distance_in_miles == 26.2:
-        print(f"Your projected marathon time is\
-             {hours} hours, {minutes} minutes, and {seconds} seconds!")
+        print(f"Your projected marathon time is {hours} hours, {minutes} minutes, and {seconds} seconds!")
     elif distance_in_miles >= 26.2:
-        print(f"Your projected ultramarathon time is\
-             {hours} hours, {minutes} minutes, and {seconds} seconds!")
+        print(f"Your projected ultramarathon time is {hours} hours, {minutes} minutes, and {seconds} seconds!")
     else:
-        print(f"Your projected finish time is\
-             {hours} hours, {minutes} minutes, and {seconds} seconds!")
+        print(f"Your projected finish time is {hours} hours, {minutes} minutes, and {seconds} seconds!")
 
 
 def pace(race_hours, race_minutes, race_seconds, distance_in_miles):
@@ -36,24 +31,18 @@ def pace(race_hours, race_minutes, race_seconds, distance_in_miles):
     pace_mins = floor(total_secs / 60 / distance_in_miles)
     pace_secs = floor((total_secs % (pace_mins * 60 * distance_in_miles)) / distance_in_miles)
     if distance_in_miles == 13.1:
-        print(f"To run a {race_hours}:{race_minutes}:{race_seconds} half marathon,\
-             you need to clock {pace_mins}-minute, {pace_secs}-second miles!")
+        print(f"To run a {race_hours}:{race_minutes}:{race_seconds} half marathon, you need to clock {pace_mins}-minute, {pace_secs}-second miles!")
     elif distance_in_miles == 26.2:
-        print(f"To run a {race_hours}:{race_minutes}:{race_seconds} marathon,\
-             you need to clock {pace_mins}-minute, {pace_secs}-second miles!")
+        print(f"To run a {race_hours}:{race_minutes}:{race_seconds} marathon, you need to clock {pace_mins}-minute, {pace_secs}-second miles!")
     elif distance_in_miles >= 26.2:
-        print(f"To run a {race_hours}:{race_minutes}:{race_seconds} ultramarathon,\
-             you need to clock {pace_mins}-minute, {pace_secs}-second miles!")
+        print(f"To run a {race_hours}:{race_minutes}:{race_seconds} ultramarathon, you need to clock {pace_mins}-minute, {pace_secs}-second miles!")
     else:
-        print(f"To run a {race_hours}:{race_minutes}:{race_seconds} race,\
-             you need to clock {pace_mins}-minute, {pace_secs}-second miles!")
+        print(f"To run a {race_hours}:{race_minutes}:{race_seconds} race, you need to clock {pace_mins}-minute, {pace_secs}-second miles!")
 
 
 def run_program():
     '''Runs the program.'''
-    print("Welcome to the Marathon Calculator.\
-          Would you like to calculate your pace based on finish time,\
-          or your finish time based on pace?\n")
+    print("Welcome to the Marathon Calculator.\n Would you like to calculate your pace based on finish time, or your finish time based on pace?\n")
     choice = input("Enter 'pace' to determine your pace, or 'finish time' to find your finish time: ")
     if choice.lower() == 'pace':
         distance_in_miles = float(input("How far (in miles) will you be running? i.e. 13.1: "))
