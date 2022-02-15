@@ -43,7 +43,7 @@ def pace(race_hours, race_minutes, race_seconds, distance_in_miles):
 
 def run_program():
     '''Runs the program.'''
-    print("Welcome to the Marathon Calculator.\n Would you like to calculate your pace based on finish time, or your finish time based on pace?\n")
+    print("*****Welcome to the Marathon Calculator.*****\nWould you like to calculate your pace based on finish time, or your finish time based on pace?\n")
     choice = input("Enter 'pace' to determine your pace, or 'finish time' to find your finish time: ")
     if choice.lower() == 'pace':
         distance_in_miles = float(input("How far (in miles) will you be running? i.e. 13.1: "))
@@ -58,7 +58,7 @@ def run_program():
         pace_mins, pace_secs = pace_mins_secs
         completion_time(pace_mins, pace_secs, distance_in_miles)
     else:
-        print("Oops. Try that again.")
+        print("\nOops. Try that again.")
         run_program()
 
 
