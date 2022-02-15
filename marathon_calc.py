@@ -1,5 +1,6 @@
 from math import *
 
+
 def completion_time(pace_mins, pace_secs, distance_in_miles):
     '''
     Takes 3 arguments, pace in minutes, pace in seconds, and distance in miles.
@@ -59,6 +60,7 @@ def run_program():
     else:
         print("Oops. Try that again.")
         run_program()
+
 
 if __name__=='__main__':
     run_program()
