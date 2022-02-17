@@ -1,4 +1,4 @@
-from math import *
+from math import floor
 
 
 def completion_time(pace_mins, pace_secs, distance_in_miles):
